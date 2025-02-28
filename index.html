@@ -39,12 +39,12 @@
             color: #007bff;
         } */
 
-        /* td {
+        td {
             text-align: center;
             vertical-align: middle;
             padding: 16px;
             font-size: 16px;
-        } */
+        }
 
         audio {
             display: inline-block;
@@ -270,10 +270,10 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Verbatim Phoneme Recognition</h2>
-        <h3 class="title is-3" style="font-size: 1.5rem;">VCTK-accent</h3>
+        <!-- <h3 class="title is-3" style="font-size: 1.5rem;">VCTK-accent</h3>
         <p>
           The TTS-based simulated datasets we proposed in this work, extended from VCTK corpus, which contains vowel and consonant phonetic errors. The total duration of the dataset is 323.9 hours.
-        </p>
+        </p> -->
       </div>
     </div>
   </div>
@@ -381,6 +381,79 @@
               <td>Arises
                   <br>ER R AA IH [Z->DH] IH Z</td>
               <td>ER R AA IH DH IH Z</td>
+              <td>PER: 0% <br> WPER: 0% <br> AER: 0% </td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+</div>
+
+<div class="container pt-5 mt-5 shadow p-5 mb-5 bg-white rounded container-1">
+  <div class="flex-container">
+    <div class="table-responsive pt-1">
+      <table class="table-pagination pt-1 shadow-card" id="rich-captions-1">
+          <thead>
+              <tr>
+                  <th>Audio</th>
+                  <th>Gound Truth</th>
+                  <th>Model Transcription</th>
+                  <th>Scores</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><audio controls="" controlslist="nodownload" class="px-1">
+                      <source src="./static/audio/multipa.wav" type="audio/wav">Your browser does not support the audio element.
+                  </audio></td>
+              <td>Meaningful
+                  <br>M IY N IH (NG) F AH L</td>
+              <td>M IY N IY T F AH L</td>
+              <td>PER: 28.57% <br> WPER: 17.20% <br> AER: 14.59% </td>
+            </tr>
+            <tr>
+                <td><audio controls="" controlslist="nodownload" class="px-1">
+                        <source src="./static/audio/001030136_2.wav" type="audio/wav">Your browser does not support the audio element.
+                    </audio></td>
+                <td>Farmer
+                    <br>F AA (R) M ER</td>
+                <td>F AA M ER</td>
+                <td>PER: 0% <br> WPER: 0% <br> AER: 0% </td>
+            </tr>
+            <tr>
+              <td><audio controls="" controlslist="nodownload" class="px-1">
+                      <source src="./static/audio/000530145_1.wav" type="audio/wav">Your browser does not support the audio element.
+                  </audio></td>
+              <td>Likes
+                  <br>L [AY->AE] K S</td>
+              <td>L AE K Z</td>
+              <td>PER: 25% <br> WPER: 1.54% <br> AER: 4.32% </td>
+            </tr>
+            <tr>
+              <td><audio controls="" controlslist="nodownload" class="px-1">
+                      <source src="./static/audio/000530055_1.wav" type="audio/wav">Your browser does not support the audio element.
+                  </audio></td>
+              <td>Mountains
+                  <br>M [AW->AA] N T AH N Z</td>
+              <td>M AA N P AH N S</td>
+              <td>PER: 28.57% <br> WPER: 8.69% <br> AER: 7.84% </td>
+            </tr>
+            <tr>
+              <td><audio controls="" controlslist="nodownload" class="px-1">
+                      <source src="./static/audio/000700015_2.wav" type="audio/wav">Your browser does not support the audio element.
+                  </audio></td>
+              <td>Pig
+                  <br>P IH [G->K]</td>
+              <td>P IH K</td>
+              <td>PER: 0% <br> WPER: 0% <br> AER: 0% </td>
+            </tr>
+            <tr>
+              <td><audio controls="" controlslist="nodownload" class="px-1">
+                      <source src="./static/audio/000700151_1.wav" type="audio/wav">Your browser does not support the audio element.
+                  </audio></td>
+              <td>Welcome
+                  <br>W [EH->IH] L K AH M</td>
+              <td>W IH L K AH M</td>
               <td>PER: 0% <br> WPER: 0% <br> AER: 0% </td>
             </tr>
           </tbody>
