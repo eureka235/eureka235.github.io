@@ -5,6 +5,17 @@
 
 ## Vicuna Deployment
 
+This section describes how to deploy the [**Vicuna**](https://lmsys.org/blog/2023-03-30-vicuna/) model for local inference using the [FastChat](https://github.com/lm-sys/FastChat) framework.
+
+### 1. Download and Install
+You can obtain the Vicuna model weights following the official FastChat instructions:  
+- **Model Weights:** [Vicuna Model Weights](https://github.com/lm-sys/FastChat?tab=readme-ov-file#model-weights)  
+- **Installation Guide:** [FastChat Installation](https://github.com/lm-sys/FastChat?tab=readme-ov-file#install)
+
+### 2. Launching the Vicuna Service
+The provided `init.sh` script initializes the Vicuna server components.  
+Below is the reference setup:
+
 ```sh
 export CUDA_VISIBLE_DEVICES=4,5
 
