@@ -31,3 +31,8 @@ pip install -r requirements.txt
 ```
 
 ## Casual Graph
+We currently provide the core implementation of the **Causal Graph**, including:  
+- the **causal modules and edges** (`full_graph.py`),  
+- the **dataset processing scripts** (`swm_dataset.py`, `label.json`), and  
+- the **full-graph training pipeline** (`train.py`).  
+
