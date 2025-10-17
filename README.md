@@ -25,7 +25,9 @@ python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
 ```
 
 ## Environment Configuration
-Please refer [requirements.txt](requirements.txt)
-
+You can install all required Python packages using:
+```sh
+pip install -r requirements.txt
+```
 
 ## Casual Graph
